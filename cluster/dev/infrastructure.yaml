@@ -13,4 +13,4 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./infrastructure/metallb/
+  path: ./infrastructure/
