@@ -5,7 +5,7 @@ metadata:
   name: spring-boot-hello
   namespace: springboot
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: spring-boot-hello
   ports:
