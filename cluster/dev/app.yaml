@@ -35,4 +35,4 @@ spec:
       patch: |-
         - op: replace
           path: /metadata/name
-          value: springboot-patchv2
+          value: springboot-patchv3
