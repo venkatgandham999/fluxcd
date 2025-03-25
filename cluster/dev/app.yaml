@@ -31,8 +31,8 @@ spec:
   patches:
     - target:
         kind: Deployment   # Similarly, update other resources like Services if needed
-        namespace: springboot-1
+        namespace: springboot
       patch: |-
         - op: replace
-          path: /metadata/namespace
+          path: /metadata/name
           value: springboot-1
