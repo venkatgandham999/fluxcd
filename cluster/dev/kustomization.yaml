@@ -4,6 +4,5 @@ resources:
   - flux-system/gotk-components.yaml
   - flux-system/gotk-sync.yaml
   - tenants/tenant-a
-  - tenants/tenant-b
   - infrastructure.yaml
   - app.yaml
