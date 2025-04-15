@@ -1,0 +1,26 @@
+---
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: spring-boot-hello
+    namespace: springboot
+    labels:
+      app: spring-boot-hello
+  spec:
+    replicas: 1
+    selector:
+      matchLabels:
+        app: spring-boot-hello
+    template:
+      metadata:
+        labels:
+          app: spring-boot-hello
+      spec:
+        # imagePullSecrets:
+        #   - name: ghcr-secret
+        containers:
+        - name: springboot-container
+          image: ghcr.io/venkatgandham999/flux-app:v1
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 8080
