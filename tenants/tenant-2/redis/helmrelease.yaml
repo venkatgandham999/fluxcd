@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: redis
-  namespace: tenant-2
+  namespace: tenant-1
 spec:
   interval: 1m
   releaseName: redis
