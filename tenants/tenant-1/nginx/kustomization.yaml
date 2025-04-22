@@ -4,7 +4,3 @@ namespace: tenant-1
 resources:
   - helmrelease.yaml
   - ns.yaml
-spec:
-  path: ./tenants
-  dependsOn:
-    - name: flux-system
