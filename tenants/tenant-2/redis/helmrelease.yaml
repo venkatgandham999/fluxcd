@@ -1,0 +1,20 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: redis
+  namespace: tenant-2
+spec:
+  interval: 1m
+  releaseName: redis
+  chart:
+    spec:
+      chart: redis
+      sourceRef:
+        kind: HelmRepository
+        name: bitnami
+        namespace: flux-system
+      version: 17.3.11
+  values:
+    architecture: standalone
+    auth:
+      enabled: false
