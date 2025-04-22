@@ -5,6 +5,6 @@ resources:
   - helmrelease.yaml
   - ns.yaml
 spec:
-  path: ./cluster/dev/tenants
+  path: ./tenants
   dependsOn:
     - name: flux-system
