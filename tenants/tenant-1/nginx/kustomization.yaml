@@ -3,4 +3,3 @@ kind: Kustomization
 namespace: tenant-1
 resources:
   - helmrelease.yaml
-  - bitnami-repo.yaml
